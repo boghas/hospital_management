@@ -21,3 +21,7 @@ Icons (base.html) source: https://www.w3schools.com/bootstrap4/bootstrap_icons.a
 Email icon (contact.html): https://fontawesome.com/search?q=email&s=solid%2Cbrands
 Address icon (contact.html): https://fontawesome.com/icons/address-card?s=solid
 Clock icon (contact.html): https://fontawesome.com/icons/clock?s=solid
+
+Super User:
+user: admin
+pass: admin
