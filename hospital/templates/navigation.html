@@ -15,15 +15,32 @@
       <li class="nav-item">
         <a class="nav-link" href="{% url 'about' %}">About</a>
       </li>
+      {% if not request.user.is_staff %}
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'admin_login' %}">Login</a>
+      </li>
+      {% endif %}
+      {% if request.user.is_staff %}
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Login
+          Doctor
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Admin</a>
-          <a class="dropdown-item" href="#">Doctor</a>
-          <a class="dropdown-item" href="#">Patient</a>
+          <a class="dropdown-item" href="#">View_Doctor</a>
+          <a class="dropdown-item" href="#">Add_Doctor</a>
       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Patient
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">View_Patient</a>
+          <a class="dropdown-item" href="#">Add_Patient</a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'admin_logout' %}">Logout</a>
+        </li>
+      {% endif %}
     </ul>
   </div>
 </nav>

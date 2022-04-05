@@ -2,7 +2,7 @@
 {% include 'navigation.html' %}
 {% block content %}
 
-{% if error == no %}
+{% if error == "no" %}
 <script>
     alert('logged in successfully');
     window.location = "{% url 'home' %}"

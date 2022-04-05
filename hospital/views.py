@@ -25,7 +25,7 @@ def Login(request):
         user = authenticate(username=u, password=p)
         try:
             if(user.is_staff):
-                Login(request, user)
+                login(request, user)
                 error = 'no'
             else:
                 error = "yes"
@@ -39,7 +39,7 @@ def Logout_admin(request):
         return redirect('login')
 
     logout(request)
-    return redirect('login')
+    return redirect('admin_login')
 
 
 
