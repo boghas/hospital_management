@@ -25,3 +25,9 @@ Clock icon (contact.html): https://fontawesome.com/icons/clock?s=solid
 Super User:
 user: admin
 pass: admin
+
+
+1.jpg: https://www.linkedin.com/company/hsl-hospital-services-limited/?originalSubdomain=bo
+person1.jpg: https://www.istockphoto.com/ro/ilustra%C8%9Bii/person
+radiography1.jpg: https://st2.depositphotos.com/3712497/5233/i/950/depositphotos_52330149-stock-photo-workplace-in-x-ray-laboratory.jpg
+Gynecologist and obstetrician: https://www.toplinemd.com/womens-care-of-bradenton/wp-content/uploads/sites/37/2019/12/female-doctor.jpg

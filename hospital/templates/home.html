@@ -13,7 +13,7 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="Images/slider_1_1.jpg" class="d-block w-100" alt="...">
+            <img src="{% static 'images/slide1.jpg' %}" class="d-block w-100" alt="...">
             <div class="carousel-caption text-white">
                 <div class="background-1">
                     <h2>Postoperative Care</h2>
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="Images/slider_2_1.jpg" class="d-block w-100" alt="...">
+            <img src="{% static 'images/slide2.jpg' %}" class="d-block w-100" alt="...">
             <div class="carousel-caption text-white">
                 <div class="background-1">
                     <h2>Surgery</h2>
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="Images/slider_3_1.jpg" class="d-block w-100" alt="...">
+            <img src="{% static 'images/slide1.jpg' %}" class="d-block w-100" alt="...">
             <div class="carousel-caption text-white">
                 <div class="background-1">
                     <h2>Neonatal intensive care unit</h2>
@@ -130,8 +130,8 @@
     <div class="row owl-carousel owl-theme">
         <div class="card shadow text-center items" style="height: 159px;">
             <div class="card-img">
-                <img src="icons/icons8-uterus-40.png"
-                    style="margin-left: auto; margin-right: auto; width: 25%; padding-top: 5px;">
+                <img src="{% static 'images/Gynecologist_and_obstetrician.jpg' %}"
+                    style="margin-left: auto;">
             </div>
 
             <div class="card-body">
@@ -141,8 +141,8 @@
 
         <div class="card shadow text-center items" style="height: 159px;">
             <div class="card-img">
-                <img src="icons/icons8-x-ray-48.png"
-                    style="margin-left: auto; margin-right: auto; width: 25%; padding-top: 5px;">
+                <img src="{% static 'images/Gynecologist_and_obstetrician.jpg' %}"
+                    style="margin-left: auto; margin-right: auto; width: 100%; padding-top: 5px;">
             </div>
 
             <div class="card-body">
@@ -152,8 +152,8 @@
 
         <div class="card shadow text-center items" style="height: 159px;">
             <div class="card-img">
-                <img src="icons/ "
-                    style="margin-left: auto; margin-right: auto; width: 25%; padding-top: 5px;">
+                <img src="{% static 'images/Gynecologist_and_obstetrician.jpg' %}"
+                    style="margin-left: auto; margin-right: auto; width: 100%; padding-top: 5px;">
             </div>
 
             <div class="card-body">
@@ -193,29 +193,6 @@
                 <p class="card-text">Anesthesia</p>
             </div>
         </div>
-
-        <div class="card shadow text-center items" style="height: 159px;">
-            <div class="card-img">
-                <img src="icons/ "
-                    style="margin-left: auto; margin-right: auto; width: 25%; padding-top: 5px;">
-            </div>
-
-            <div class="card-body">
-                <p class="card-text">Pediatrician</p>
-            </div>
-        </div>
-
-        <div class="card shadow text-center items" style="height: 159px;">
-            <div class="card-img">
-                <img src="icons/ "
-                    style="margin-left: auto; margin-right: auto; width: 25%; padding-top: 5px;">
-            </div>
-
-            <div class="card-body">
-                <p class="card-text">Urology Service</p>
-            </div>
-        </div>
-
     </div>
 </div>
 
@@ -236,7 +213,7 @@
     <div class="row owl-carousel owl-theme">
         <div class="card shadow text-center items">
             <div class="card-img">
-                <img src=" " alt=""
+                <img src="{% static 'images/pharmacy.jpg' %}" alt=""
                     style="margin-left: auto; margin-right: auto; width: 25%;">
             </div>
             <div class="card-body">
@@ -246,7 +223,8 @@
 
         <div class="card shadow text-center items">
             <div class="card-img">
-                <img src=" " alt="" style="margin-left: auto; margin-right: auto; width: 25%;">
+                <img src="{% static 'images/pharmacy.jpg' %}" alt=""
+                    style="margin-left: auto; margin-right: auto; width: 25%;">
             </div>
             <div class="card-body">
                 <p class="card-text">Pharmacy</p>
@@ -255,17 +233,7 @@
 
         <div class="card shadow text-center items">
             <div class="card-img">
-                <img src="" alt=""
-                    style="margin-left: auto; margin-right: auto; width: 25%;">
-            </div>
-            <div class="card-body">
-                <p class="card-text">USG</p>
-            </div>
-        </div>
-
-        <div class="card shadow text-center items">
-            <div class="card-img">
-                <img src="" alt=""
+                <img src="{% static 'images/pharmacy.jpg' %}" alt=""
                     style="margin-left: auto; margin-right: auto; width: 25%;">
             </div>
             <div class="card-body">
@@ -275,26 +243,8 @@
 
         <div class="card shadow text-center items">
             <div class="card-img">
-                <img src="" alt=""
+                <img src="{% static 'images/pharmacy.jpg' %}" alt=""
                     style="margin-left: auto; margin-right: auto; width: 25%;">
-            </div>
-            <div class="card-body">
-                <p class="card-text">ECHO Services</p>
-            </div>
-        </div>
-
-        <div class="card shadow text-center items">
-            <div class="card-img">
-                <img src="" alt="" style="margin-left: auto; margin-right: auto; width: 25%;">
-            </div>
-            <div class="card-body">
-                <p class="card-text">Colonoscopy</p>
-            </div>
-        </div>
-
-        <div class="card shadow text-center items">
-            <div class="card-img">
-                <img src="#" alt="" style="margin-left: auto; margin-right: auto; width: 25%;">
             </div>
             <div class="card-body">
                 <p class="card-text">Digital X-Ray</p>
@@ -303,20 +253,11 @@
 
         <div class="card shadow text-center items">
             <div class="card-img">
-                <img src=" " alt=""
+                <img src="{% static 'images/pharmacy.jpg' %}" alt=""
                     style="margin-left: auto; margin-right: auto; width: 25%;">
             </div>
             <div class="card-body">
                 <p class="card-text">Lab</p>
-            </div>
-        </div>
-
-        <div class="card shadow text-center items">
-            <div class="card-img">
-                <img src=" " alt="" style="margin-left: auto; margin-right: auto; width: 25%;">
-            </div>
-            <div class="card-body">
-                <p class="card-text">Colposcopy</p>
             </div>
         </div>
     </div>
@@ -350,7 +291,7 @@
     <div class="row owl-carousel owl-theme">
         <div class="card shadow text-center items">
             <div class="card-body profile-card">
-                <img class="img-thumbnail rounded-circle border-0" src=" ">
+                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/doctor4.jpg' %}">
                 <h4 class="card-title" style="font-size: 18px;">Dr. Xyz</h4>
                 <h6 class="card-subtitle">Senior Consultant Surgeon</h6>
                 <p class="card-text">MBBS, MS(TU), FMAS, DMAS (WLH)</p>
@@ -362,7 +303,7 @@
 
         <div class="card shadow text-center items">
             <div class="card-body profile-card">
-                <img class="img-thumbnail rounded-circle border-0" src="Images/ ">
+                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/doctor1.jpg' %}">
                 <h4 class="card-title" style="font-size: 18px;">Dr. Lucky sharma</h4>
                 <h6 class="card-subtitle">Gynecologist And Obstetrician</h6>
                 <p class="card-text">MBBS, MD (NMC)</p>
@@ -374,7 +315,7 @@
 
         <div class="card shadow text-center items">
             <div class="card-body profile-card">
-                <img class="img-thumbnail rounded-circle border-0" src="Images/ ">
+                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/doctor1.jpg' %}">
                 <h4 class="card-title" style="font-size: 18px;">Dr.Abc</h4>
                 <h6 class="card-subtitle">Orthopedic Surgeon</h6>
                 <p class="card-text">MBBS, MS Orthopedic </p>
@@ -386,7 +327,7 @@
 
         <div class="card shadow text-center items">
             <div class="card-body profile-card">
-                <img class="img-thumbnail rounded-circle border-0" src="Images/">
+                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/doctor2.png' %}">
                 <h4 class="card-title" style="font-size: 18px;">Dr.Dev </h4>
                 <h6 class="card-subtitle">Consultant Physician</h6>
                 <p class="card-text">MBBS, MD (Internal Medicine)</p>
