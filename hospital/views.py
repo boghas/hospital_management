@@ -16,7 +16,15 @@ def Contact(request):
 def Index(request):
     if not (request.user.is_staff):
         return redirect('login')
-    return render(request, 'index.html')
+    doctors = Doctor.objects.all()
+    patients = Patient.objects.all()
+    appointments = Appointment.objects.all()
+    d = len(doctors)
+    p = len(patients)
+    a = len(appointments)
+
+    entry = {'d': d, 'p': p, 'a': a}
+    return render(request, 'index.html', entry)
 
 def Login(request):
     error = ""
