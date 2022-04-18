@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
-from .models import Doctor, Patient
+from .models import Doctor, Patient, Appointment
 
 # Create your views here.
 def About(request):
@@ -105,3 +105,42 @@ def Add_Patient(request):
     d = {'error': error}
     return render(request, 'add_patient.html', d)
 
+def View_Appointment(request):
+    if not request.user.is_staff:
+        return redirect('login')
+    apt = Appointment.objects.all()
+    a = {'apt': apt}
+    return render(request, 'view_appointment.html', a)
+
+
+def Add_Appointment(request):
+    error = ""
+    if not request.user.is_staff:
+        return redirect('login')
+
+    doctors = Doctor.objects.all()
+    patients = Patient.objects.all()
+
+    if(request.method == "POST"):
+        d = request.POST['doctor']
+        p = request.POST['patient']
+        dt = request.POST['date']
+        tm = request.POST['time']
+        doctor = Doctor.objects.filter(name=d).first()
+        patient = Patient.objects.filter(name=p).first()
+
+        try:
+            Appointment.objects.create(doctor=doctor, patient=patient, date=dt, time=tm)
+            error = 'no'
+        except:
+            error = "yes"
+
+    a = {'doctor': doctors, 'patient': patients, 'error': error}
+    return render(request, 'add_appointment.html', a)
+
+def Delete_Appointment(request, pid):
+        if not request.user.is_staff:
+            return redirect('login')
+        appointment = Appointment.objects.get(id=pid)
+        appointment.delete()
+        return redirect('view_appointment')
