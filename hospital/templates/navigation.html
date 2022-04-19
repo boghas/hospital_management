@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Hospital Management System</a>
+  <a class="navbar-brand" href="{% url 'home' %}">Sistemul de Management al Spitalului</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -9,48 +9,48 @@
 
       {% if not request.user.is_staff %}
       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{% url 'home' %}">Acasă <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{% url 'contact' %}">Contact</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'about' %}">About</a>
+        <a class="nav-link" href="{% url 'about' %}">Despre noi</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'admin_login' %}">Login</a>
+        <a class="nav-link" href="{% url 'admin_login' %}">Autentificare</a>
       </li>
       {% endif %}
       {% if request.user.is_staff %}
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
+        <a class="nav-link" href="{% url 'dashboard' %}">Bord</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Doctor
+          Doctori
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'view_doctor' %}">View_Doctor</a>
-          <a class="dropdown-item" href="{% url 'add_doctor' %}">Add_Doctor</a>
+          <a class="dropdown-item" href="{% url 'view_doctor' %}">Afișare Doctori</a>
+          <a class="dropdown-item" href="{% url 'add_doctor' %}">Adăugare Doctor</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Patient
+          Pacienți
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'view_patient' %}">View_Patient</a>
-          <a class="dropdown-item" href="{% url 'add_patient' %}">Add_Patient</a>
+          <a class="dropdown-item" href="{% url 'view_patient' %}">Afișare Pacienți</a>
+          <a class="dropdown-item" href="{% url 'add_patient' %}">Adăugare Pacient</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Appointments
+          Programări
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'view_appointment' %}">View_Appointment</a>
-          <a class="dropdown-item" href="{% url 'add_appointment' %}">Add_Appointment</a>
+          <a class="dropdown-item" href="{% url 'view_appointment' %}">Afișare Programări</a>
+          <a class="dropdown-item" href="{% url 'add_appointment' %}">Adăugare Programare</a>
       </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'admin_logout' %}">Logout</a>
+          <a class="nav-link" href="{% url 'admin_logout' %}">Deconectare</a>
         </li>
       {% endif %}
     </ul>

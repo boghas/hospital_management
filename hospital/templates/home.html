@@ -2,7 +2,6 @@
 {% include 'navigation.html' %}
 {% load static %}
 
-
 {% block content %}
 
 <div id="carousel-slider" class="carousel slide" data-ride="carousel">
@@ -13,15 +12,15 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{% static 'images/slide1.jpg' %}" class="d-block w-100" alt="...">
+            <img src="{% static 'images/Post-Operative-Care.jpg' %}" class="d-block w-100" alt="...">
             <div class="carousel-caption text-white">
                 <div class="background-1">
-                    <h2>Postoperative Care</h2>
-                    <p>Postoperative care is the care you receive after a surgical procedure. The type of postoperative
-                        care you need depends on the type of surgery you have, as well as your health history. It often
-                        includes pain management and wound care.
+                    <h2>Îngrijire postoperatorie</h2>
+                    <p>Îngrijirea postoperatorie este îngrijirea pe care o primiți după o intervenție chirurgicală.
+                        îngrijirea de care aveți nevoie depinde de tipul de intervenție chirurgicală pe care o aveți, precum și de istoricul dumneavoastră de sănătate. Adesea
+                        include gestionarea durerii și îngrijirea rănilor.
                     </p>
-                    <button class="btn btn-light"><a href="#departments" class="nav-link">See All Services</a></button>
+                    <button class="btn btn-light"><a href="#departments" class="nav-link">Vezi toate serviciile</a></button>
                 </div>
             </div>
         </div>
@@ -29,12 +28,12 @@
             <img src="{% static 'images/slide2.jpg' %}" class="d-block w-100" alt="...">
             <div class="carousel-caption text-white">
                 <div class="background-1">
-                    <h2>Surgery</h2>
-                    <p>Surgery is a medical specialty that uses operative manual and instrumental techniques on a person
-                        to investigate or treat a pathological condition such as a disease or injury, to help improve
-                        bodily function or appearance or to repair unwanted ruptured areas.
+                    <h2>Intervenția Chirurgicală</h2>
+                    <p>Chirurgia este o specialitate medicală care utilizează tehnici operative manuale și instrumentale asupra unei persoane
+                         pentru a investiga sau trata o afecțiune patologică, cum ar fi o boală sau o leziune, pentru a ajuta la îmbunătățirea
+                         funcția sau aspectul corporal sau pentru a repara zonele rupte nedorite.
                     </p>
-                    <button class="btn btn-light"><a href="#departments" class="nav-link">See All Services</a></button>
+                    <button class="btn btn-light"><a href="#departments" class="nav-link">Vezi toate serviciile</a></button>
                 </div>
             </div>
         </div>
@@ -42,31 +41,24 @@
             <img src="{% static 'images/slide1.jpg' %}" class="d-block w-100" alt="...">
             <div class="carousel-caption text-white">
                 <div class="background-1">
-                    <h2>Neonatal intensive care unit</h2>
-                    <p>A neonatal intensive care unit, also known as an intensive care nursery, is an intensive care
-                        unit specializing in the care of ill or premature newborn infants. Neonatal refers to the first
-                        28 days of life. Neonatal care, as known as specialized nurseries or intensive care, has been
-                        around since the 1960s.
+                    <h2>Unitatea de terapie intensivă neonatală</h2>
+                    <p>O unitate de terapie intensivă neonatală, cunoscută și sub numele de creșă de terapie intensivă, este o terapie intensivă
+                         unitate specializată în îngrijirea nou-născuților bolnavi sau prematuri. Neonatal se referă la primul
+                         28 de zile de viață. Îngrijirea neonatală, cunoscută sub numele de creșe specializate sau terapie intensivă, a fost
+                         în jur din anii 1960.
                     </p>
-                    <button class="btn btn-light"><a href="#departments" class="nav-link">See All Services</a></button>
+                    <button class="btn btn-light"><a href="#departments" class="nav-link">Vezi toate serviciile</a></button>
                 </div>
-
-                <!------
-                <div class="background-2">
-
-                </div>
-
-                -->
             </div>
         </div>
     </div>
     <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only">Înapoi</span>
     </a>
     <a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="sr-only">Înainte</span>
     </a>
 </div>
 
@@ -74,43 +66,36 @@
 
 <!----------------------Introduction Section------------->
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-4">
-            <img src="Images/1_1_1_1.png">
-        </div>
-        <div class="col-md-4" id="intro-text">
-            <h1 class="text-center">
-                <h1 class="text-center">Welcome to hospital management system </h1>
-            </h1>
-            <p class="text-justify">
-            <h5>Hospital Management system is a system where you can take any type of services. It is located in
-                Tulsipur Dang. It provides different types of services like radiography, different types sergons with
-                highly reputed doctors.</h5>
-            </p>
-            <img src="Images/sign1.png">
-        </div>
-        <div class="col-md-4">
-            <div class="container-fluid">
-                <br>
-                <button class="btn btn-lg btn-block"><a href="#about" class="nav-link"><i
-                            class="fa fa-calendar-minus-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;Request
-                        Appointments</a></button>
-                <br>
-                <button class="btn btn-lg btn-block"><a href="#doctors" class="nav-link"><i
-                            class="fa fa-user-md"></i>&nbsp;&nbsp;&nbsp;&nbsp;Find
-                        Doctors</a></button>
-                <br>
-                <button class="btn btn-lg btn-block"><a href="#about" class="nav-link"><i
-                            class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;&nbsp;Location</a></button>
-                <br>
-                <button class="btn btn-lg btn-block"><a href="#about" class="nav-link"><i
-                            class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;Emergency
-                        Contact</a></button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <img src=" ">
+            </div>
+            <div class="col-md-4" id="intro-text">
+                <h1 class="text-center">
+                    <h1 class="text-center">Bun venit la sistemul de management al spitalului </h1>
+                </h1>
+                <p class="text-justify">
+                <h5>Sistemul de management al spitalelor este un sistem în care poți avea orice tip de servicii. Este localizat în
+                     Bucureşti. Oferă diferite tipuri de servicii precum radiografie, diferite tipuri de intervenții chirurgicale cu
+                     medici de mare renume.</h5>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="container-fluid">
+                    <br>
+                    <button class="btn btn-lg btn-block"><a href="#doctors" class="nav-link"><i
+                                class="fa fa-user-md"></i>&nbsp;&nbsp;&nbsp;&nbsp;Găsește Doctori</a></button>
+                    <br>
+                    <button class="btn btn-lg btn-block"><a href="http://maps.google.com/maps?q='Bucuresti'" class="nav-link"><i
+                                class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;&nbsp;Localizare</a></button>
+                    <br>
+                    <button class="btn btn-lg btn-block"><a href="tel:+40 728 864 082" class="nav-link"><i
+                                class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;Contact de urgență</a></button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 <!---------------------Inroduction Section End---------------------->
 
@@ -120,8 +105,9 @@
 <div class="container-fluid" id="departments">
     <div class="row">
         <div class="col-md-12">
-            <h4 class="text-center text-primary">Departments</h4>
-            <h1 class="text-center">Medical services</h1>
+            <h2 class="text-center text-primary">Departamente</h2>
+            <br>
+            <h1 class="text-center">Servicii Medicale</h1>
         </div>
     </div>
 </div>
@@ -130,67 +116,67 @@
     <div class="row owl-carousel owl-theme">
         <div class="card shadow text-center items" style="height: 159px;">
             <div class="card-img">
-                <img src="{% static 'images/Gynecologist_and_obstetrician.jpg' %}"
-                    style="margin-left: auto;">
-            </div>
-
-            <div class="card-body">
-                <p class="card-text">Gynecologist and obstetrician</p>
-            </div>
-        </div>
-
-        <div class="card shadow text-center items" style="height: 159px;">
-            <div class="card-img">
-                <img src="{% static 'images/Gynecologist_and_obstetrician.jpg' %}"
-                    style="margin-left: auto; margin-right: auto; width: 100%; padding-top: 5px;">
-            </div>
-
-            <div class="card-body">
-                <p class="card-text">Radiology</p>
-            </div>
-        </div>
-
-        <div class="card shadow text-center items" style="height: 159px;">
-            <div class="card-img">
-                <img src="{% static 'images/Gynecologist_and_obstetrician.jpg' %}"
-                    style="margin-left: auto; margin-right: auto; width: 100%; padding-top: 5px;">
-            </div>
-
-            <div class="card-body">
-                <p class="card-text">Orthopedic and Surgery</p>
-            </div>
-        </div>
-
-        <div class="card shadow text-center items" style="height: 159px;">
-            <div class="card-img">
-                <img src=""
+                <img src="{% static 'images/gynecologist.png' %}"
                     style="margin-left: auto; margin-right: auto; width: 25%; padding-top: 5px;">
             </div>
 
             <div class="card-body">
-                <p class="card-text">General and Laparoscopic Surgery</p>
+                <p class="card-text">Ginecolog si Obstetrician</p>
             </div>
         </div>
 
         <div class="card shadow text-center items" style="height: 159px;">
             <div class="card-img">
-                <img src="  "
+                <img src="{% static 'images/radiology.png' %}"
                     style="margin-left: auto; margin-right: auto; width: 25%; padding-top: 5px;">
             </div>
 
             <div class="card-body">
-                <p class="card-text">Physician</p>
+                <p class="card-text">Radiologie</p>
             </div>
         </div>
 
         <div class="card shadow text-center items" style="height: 159px;">
             <div class="card-img">
-                <img src="icons/ "
+                <img src="{% static 'images/surgery-room.png' %}"
                     style="margin-left: auto; margin-right: auto; width: 25%; padding-top: 5px;">
             </div>
 
             <div class="card-body">
-                <p class="card-text">Anesthesia</p>
+                <p class="card-text">Ortopedie și Chirurgie</p>
+            </div>
+        </div>
+
+        <div class="card shadow text-center items" style="height: 159px;">
+            <div class="card-img">
+                <img src="{% static 'images/general-surgery.png' %}"
+                    style="margin-left: auto; margin-right: auto; width: 25%; padding-top: 5px;">
+            </div>
+
+            <div class="card-body">
+                <p class="card-text">Chirurgie generală și laparoscopică</p>
+            </div>
+        </div>
+
+        <div class="card shadow text-center items" style="height: 159px;">
+            <div class="card-img">
+                <img src="{% static 'images/doctor.png' %}"
+                    style="margin-left: auto; margin-right: auto; width: 25%; padding-top: 5px;">
+            </div>
+
+            <div class="card-body">
+                <p class="card-text">Doctor de familie</p>
+            </div>
+        </div>
+
+        <div class="card shadow text-center items" style="height: 159px;">
+            <div class="card-img">
+                <img src="{% static 'images/anesthesia.png' %}"
+                    style="margin-left: auto; margin-right: auto; width: 25%; padding-top: 5px;">
+            </div>
+
+            <div class="card-body">
+                <p class="card-text">Anestezie</p>
             </div>
         </div>
     </div>
@@ -205,7 +191,8 @@
 <div class="container-fluid" id="services">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center">Other Services</h1>
+            <br>
+            <h1 class="text-center">Alte Servicii</h1>
         </div>
     </div>
 
@@ -213,51 +200,51 @@
     <div class="row owl-carousel owl-theme">
         <div class="card shadow text-center items">
             <div class="card-img">
-                <img src="{% static 'images/pharmacy.jpg' %}" alt=""
+                <img src="{% static 'images/urgency.png' %}" alt=""
                     style="margin-left: auto; margin-right: auto; width: 25%;">
             </div>
             <div class="card-body">
-                <p class="card-text">Emergency</p>
+                <p class="card-text">Urgențe</p>
             </div>
         </div>
 
         <div class="card shadow text-center items">
             <div class="card-img">
-                <img src="{% static 'images/pharmacy.jpg' %}" alt=""
+                <img src="{% static 'images/pharmacy.png' %}" alt=""
                     style="margin-left: auto; margin-right: auto; width: 25%;">
             </div>
             <div class="card-body">
-                <p class="card-text">Pharmacy</p>
+                <p class="card-text">Farmacii</p>
             </div>
         </div>
 
         <div class="card shadow text-center items">
             <div class="card-img">
-                <img src="{% static 'images/pharmacy.jpg' %}" alt=""
+                <img src="{% static 'images/endoscopy.png' %}" alt=""
                     style="margin-left: auto; margin-right: auto; width: 25%;">
             </div>
             <div class="card-body">
-                <p class="card-text">Endoscopy</p>
+                <p class="card-text">Endoscopie</p>
             </div>
         </div>
 
         <div class="card shadow text-center items">
             <div class="card-img">
-                <img src="{% static 'images/pharmacy.jpg' %}" alt=""
+                <img src="{% static 'images/x-rays.png' %}" alt=""
                     style="margin-left: auto; margin-right: auto; width: 25%;">
             </div>
             <div class="card-body">
-                <p class="card-text">Digital X-Ray</p>
+                <p class="card-text">Radiografie digitală</p>
             </div>
         </div>
 
         <div class="card shadow text-center items">
             <div class="card-img">
-                <img src="{% static 'images/pharmacy.jpg' %}" alt=""
+                <img src="{% static 'images/flask.png' %}" alt=""
                     style="margin-left: auto; margin-right: auto; width: 25%;">
             </div>
             <div class="card-body">
-                <p class="card-text">Lab</p>
+                <p class="card-text">Laboratoare</p>
             </div>
         </div>
     </div>
@@ -266,24 +253,24 @@
 <!------------------------------End of Other services---------------------->
 
 
-<!---------------------We team Section End---------------------->
+<!---------------------Our team Section End---------------------->
 <div class="col-md-12">
-    <h1 class="text-center text-primary">Our Team of Experts</h1>
+    <h1 class="text-center text-primary">Echipa noastră de experți</h1>
 
 </div>
 <div class="carousel-inner">
     <img src=" " style="max-width: 100%;">
 </div>
 
-<!---------------------We team Section End---------------------->
+<!---------------------Our team Section End---------------------->
 
 <!-------------------Meet Our Team Section----------------->
 
 <div class="container-fluid" id="doctors">
     <div class="row">
         <div class="col-md-12">
-            <h4 class="text-center text-primary">Meet Our Team</h4>
-            <h1 class="text-center">Specialist Doctors</h1>
+            <h4 class="text-center text-primary">Întâlnește-ne echipa</h4>
+            <h1 class="text-center">Doctorii cu care ne mândrim</h1>
         </div>
     </div>
 
@@ -291,9 +278,9 @@
     <div class="row owl-carousel owl-theme">
         <div class="card shadow text-center items">
             <div class="card-body profile-card">
-                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/doctor4.jpg' %}">
-                <h4 class="card-title" style="font-size: 18px;">Dr. Xyz</h4>
-                <h6 class="card-subtitle">Senior Consultant Surgeon</h6>
+                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/female-doctor.png' %}">
+                <h4 class="card-title" style="font-size: 18px;">Dr. Maria Grigorescu</h4>
+                <h6 class="card-subtitle">Chirurg Consultant Senior</h6>
                 <p class="card-text">MBBS, MS(TU), FMAS, DMAS (WLH)</p>
                 <a href="#" class="card-link"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="card-link"><i class="fa fa-instagram"></i></a>
@@ -303,9 +290,33 @@
 
         <div class="card shadow text-center items">
             <div class="card-body profile-card">
-                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/doctor1.jpg' %}">
-                <h4 class="card-title" style="font-size: 18px;">Dr. Lucky sharma</h4>
-                <h6 class="card-subtitle">Gynecologist And Obstetrician</h6>
+                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/generic-doctor-small.png' %}">
+                <h4 class="card-title" style="font-size: 18px;">Dr. Alexandru Georgescu</h4>
+                <h6 class="card-subtitle">Chirurg Consultant Senior</h6>
+                <p class="card-text">MBBS, MS(TU), FMAS, DMAS (WLH)</p>
+                <a href="#" class="card-link"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="card-link"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="card-link"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="card shadow text-center items">
+            <div class="card-body profile-card">
+                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/female-doctor.png' %}">
+                <h4 class="card-title" style="font-size: 18px;">Dr. Ana-Maria Axinte</h4>
+                <h6 class="card-subtitle">Chirurg Consultant Senior</h6>
+                <p class="card-text">MBBS, MS(TU), FMAS, DMAS (WLH)</p>
+                <a href="#" class="card-link"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="card-link"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="card-link"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="card shadow text-center items">
+            <div class="card-body profile-card">
+                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/generic-doctor-small.png' %}">
+                <h4 class="card-title" style="font-size: 18px;">Dr. Sebastian Stan</h4>
+                <h6 class="card-subtitle">Ginecolog si Obstetrician</h6>
                 <p class="card-text">MBBS, MD (NMC)</p>
                 <a href="#" class="card-link"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="card-link"><i class="fa fa-instagram"></i></a>
@@ -315,9 +326,9 @@
 
         <div class="card shadow text-center items">
             <div class="card-body profile-card">
-                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/doctor1.jpg' %}">
-                <h4 class="card-title" style="font-size: 18px;">Dr.Abc</h4>
-                <h6 class="card-subtitle">Orthopedic Surgeon</h6>
+                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/female-doctor.png' %}">
+                <h4 class="card-title" style="font-size: 18px;">Dr. Mihaela Enescu</h4>
+                <h6 class="card-subtitle">Chirurg Ortoped</h6>
                 <p class="card-text">MBBS, MS Orthopedic </p>
                 <a href="#" class="card-link"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="card-link"><i class="fa fa-instagram"></i></a>
@@ -327,10 +338,10 @@
 
         <div class="card shadow text-center items">
             <div class="card-body profile-card">
-                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/doctor2.png' %}">
-                <h4 class="card-title" style="font-size: 18px;">Dr.Dev </h4>
-                <h6 class="card-subtitle">Consultant Physician</h6>
-                <p class="card-text">MBBS, MD (Internal Medicine)</p>
+                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/female-doctor.png' %}">
+                <h4 class="card-title" style="font-size: 18px;">Dr. Ioana Niculescu</h4>
+                <h6 class="card-subtitle">Medic consultant</h6>
+                <p class="card-text">MBBS, MD (Medicina interna)</p>
                 <a href="#" class="card-link"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="card-link"><i class="fa fa-instagram"></i></a>
                 <a href="#" class="card-link"><i class="fa fa-linkedin"></i></a>
