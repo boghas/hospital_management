@@ -57,6 +57,20 @@ def View_Doctor(request):
     d = {'doc': doc}
     return render(request, 'view_doctor.html', d)
 
+def View_Patient(request):
+    if not request.user.is_staff:
+        return redirect('login')
+    pat = Patient.objects.all()
+    p = {'pat': pat}
+    return render(request, 'view_patient.html', p)
+
+def View_Appointment(request):
+    if not request.user.is_staff:
+        return redirect('login')
+    apt = Appointment.objects.all()
+    a = {'apt': apt}
+    return render(request, 'view_appointment.html', a)
+
 def Delete_Doctor(request, pid):
     if not request.user.is_staff:
         return redirect('login')
@@ -80,13 +94,6 @@ def Add_Doctor(request):
             error = "yes"
     d = {'error': error}
     return render(request, 'add_doctor.html', d)
-
-def View_Patient(request):
-    if not request.user.is_staff:
-        return redirect('login')
-    pat = Patient.objects.all()
-    p = {'pat': pat}
-    return render(request, 'view_patient.html', p)
 
 def Delete_Patient(request, pid):
     if not request.user.is_staff:
@@ -112,14 +119,6 @@ def Add_Patient(request):
             error = "yes"
     d = {'error': error}
     return render(request, 'add_patient.html', d)
-
-def View_Appointment(request):
-    if not request.user.is_staff:
-        return redirect('login')
-    apt = Appointment.objects.all()
-    a = {'apt': apt}
-    return render(request, 'view_appointment.html', a)
-
 
 def Add_Appointment(request):
     error = ""
